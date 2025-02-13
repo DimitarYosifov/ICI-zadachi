@@ -1,4 +1,4 @@
-let totalTasks = 5;
+let totalTasks = 50;
 let currentTask = 0;
 let data = [];
 
