@@ -1,0 +1,27 @@
+#app {
+    display: flex;
+    font-size: 4rem;
+    position: absolute;
+    left: 50%;
+    top: 45vh;
+    transform: translate(-50%, 0);
+}
+
+#result {
+    font-size: 3rem;
+    width: 30vw;
+}
+
+button {
+    width: 10vw;
+    font-size: 2rem;
+}
+
+
+#current {
+    position: absolute;
+    left: 50%;
+    top: 65vh;
+    transform: translate(-50%, 0);
+    font-size: 2rem;
+}
