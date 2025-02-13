@@ -1,4 +1,4 @@
-let totalTasks = 100;
+let totalTasks = 5;
 let currentTask = 0;
 let data = [];
 
@@ -8,7 +8,7 @@ const answered = () => {
     if (currentTask === totalTasks) {
         let correctAnswers = data.filter((task) => task.isCorrect).length;
         currentTask = 0;
-        totalTasks = totalTasks - correctAnswers
+        // totalTasks = totalTasks - correctAnswers
         data = data.filter((task) => !task.isCorrect);
         if (data.length === 0) {
             alert('БРАВО! Всички отговори са правилни!');
@@ -17,6 +17,7 @@ const answered = () => {
             return;
         } else {
             alert(`Правилни отговори ${correctAnswers} от ${totalTasks}`);
+            totalTasks = totalTasks - correctAnswers
         }
     }
     localStorage.setItem('data', JSON.stringify(data));
